@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math Quiz</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Math Quiz</h1>
+    </header>
+    <main>
+      <div id="question" class="question-container"></div>
+      <form id="answer-form" class="answer-form">
+        <div class="options-container">
+          <div class="option">
+            <input type="radio" name="answer" id="answer-1" value="">
+            <label for="answer-1"></label>
+          </div>
+          <div class="option">
+            <input type="radio" name="answer" id="answer-2" value="">
+            <label for="answer-2"></label>
+          </div>
+          <div class="option">
+            <input type="radio" name="answer" id="answer-3" value="">
+            <label for="answer-3"></label>
+          </div>
+          <div class="option">
+            <input type="radio" name="answer" id="answer-4" value="">
+            <label for="answer-4"></label>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Submit Answer</button>
+      </form>
+    </main>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
